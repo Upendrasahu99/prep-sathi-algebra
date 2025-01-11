@@ -7,9 +7,9 @@ import qustionsArr from "../data/algebraQuestions";
 //   }
 // });
 
-const retrieveData = () => {
+const retrieveData = (numberOfQuestions) => {
   let count = 0;
-  const numberOfQuestions = 15;
+  // const numberOfQuestions = 15;
   const number = new Set();
   const testQuestions = [];
 

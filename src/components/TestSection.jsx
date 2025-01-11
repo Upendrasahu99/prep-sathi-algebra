@@ -1,25 +1,20 @@
-import React from 'react'
-import McqBox from './McqBox.jsx'
-import retrieveData from '../utils/retrieveData.js';
-import { useState } from 'react';
+import {useState} from 'react'
+import FullTestMode from './FullTestMode.jsx';
+import QuestionTestMode from './QuestionTestMode.jsx';
 
 const TestSection = () => {
-  const[testStarted, setTestStarted] = React.useState(false);
-  const [testQuestionArr, setTestQuestionArr] = useState([]);
-
-  const handleStartTest = () => {
-    setTestStarted(true);
-    setTestQuestionArr(retrieveData());
-    return;
-  }
+  const[testMode, setTestMode] = useState('');
 
   return (
     <div className='flex justify-center items-center'>
+      {testMode === 'questionMode' && <QuestionTestMode />}
+      {testMode === 'testMode' && <FullTestMode />}
       {
-        testStarted ?
-        <McqBox testQuestionArr={testQuestionArr} />
-        :
-        <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" onClick={handleStartTest}>Start Test</button>
+        testMode === '' &&
+        <div className='flex flex-col gap-5'>
+          <button className="btn sm:btn-sm md:btn-md lg:btn-lg" onClick={() => {setTestMode('questionMode')}}>Question-by-Question</button>
+          <button className="btn sm:btn-sm md:btn-md lg:btn-lg" onClick={() => {setTestMode('testMode')}} disabled>Full Test</button>
+        </div>
       }
     </div>
   )
