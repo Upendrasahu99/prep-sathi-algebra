@@ -19,8 +19,13 @@ const McqBox = ({testQuestionArr}) => {
         :
         <div className="card bg-base-100 w-96 shadow-xl mx-auto">
           <div className="card-body flex flex-col gap-5">
-            <p>{currentIndex + 1}. {currentQuestion.questionHindi}</p>
-            <ol className='grid grid-cols-2 gap-5 justify-center'>
+            <p>
+              <div className="badge badge-neutral me-2">{currentIndex + 1}.</div>{currentQuestion.questionHindi}
+            </p>
+            <p>
+              <div className="badge badge-neutral me-2">{currentIndex + 1}.</div> 
+              {currentQuestion.questionEnglish}</p>
+            <ol className='grid grid-cols-2 gap-8 justify-center'>
               <li className='flex items-center gap-2'>
                 <input 
                   type="radio" 
