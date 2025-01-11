@@ -170,15 +170,6 @@ const qustionsArr = [
           "subtopic": "linear equations"
       },
       {
-          "id": 20,
-          "questionHindi": "यदि (x - 1)/3 = (x + 1)/2, तो x का मान ज्ञात कीजिए।",
-          "questionEnglish": "If (x - 1)/3 = (x + 1)/2, then what is the value of x.",
-          "option": ["-1", "1", "3", "5"],
-          "answer": ["-5"],
-          "topic": "algebra",
-          "subtopic": "linear equations"
-      },
-      {
           "id": 21,
           "questionHindi": "दो क्रमागत सम संख्याओं का योग 46 है। छोटी संख्या ज्ञात कीजिए।",
           "questionEnglish": "The sum of two consecutive even numbers is 46. Find the smaller number.",
@@ -233,15 +224,6 @@ const qustionsArr = [
           "subtopic": "linear equations"
       },
       {
-          "id": 27,
-          "questionHindi": "यदि किसी आयत की लंबाई उसकी चौड़ाई से 10 सेमी अधिक है और उसका परिमाप 52 सेमी है, तो आयत की लंबाई ज्ञात कीजिए।",
-          "questionEnglish": "If the length of a rectangle is 10 cm more than its width and its perimeter is 52 cm, find the length of the rectangle.",
-          "option": ["13 cm", "15 cm", "17 cm", "19 cm"],
-          "answer": ["16 cm"],
-          "topic": "algebra",
-          "subtopic": "linear equations"
-      },
-      {
           "id": 28,
           "questionHindi": "यदि तीन क्रमागत पूर्ण संख्याओं का योग 48 है, तो मध्य संख्या ज्ञात कीजिए।",
           "questionEnglish": "If the sum of three consecutive integers is 48, find the middle number.",
@@ -291,15 +273,6 @@ const qustionsArr = [
           "questionEnglish": "If 1/x + 1/3 = 1/2, then what is the value of x.",
           "option": ["-6", "-3", "3", "6"],
           "answer": ["6"],
-          "topic": "algebra",
-          "subtopic": "linear equations"
-      },
-      {
-          "id": 34,
-          "questionHindi": "यदि 2x/5 - 1/4 = 1/2, तो x का मान ज्ञात कीजिए।",
-          "questionEnglish": "If 2x/5 - 1/4 = 1/2, then what is the value of x.",
-          "option": ["5/4", "3/4", "1", "1/4"],
-          "answer": ["15/8"], 
           "topic": "algebra",
           "subtopic": "linear equations"
       },
@@ -447,15 +420,6 @@ const qustionsArr = [
           "subtopic": "linear equations"
       },
       {
-          "id": 51,
-          "questionHindi": "यदि किसी संख्या में 18 जोड़ने पर परिणाम उस संख्या के दोगुने के बराबर होता है, तो वह संख्या ज्ञात कीजिए।",
-          "questionEnglish": "If 18 is added to a number, the result is equal to twice the number. Find the number.",
-          "option": ["9", "10", "11", "12"],
-          "answer": ["18"],
-          "topic": "algebra",
-          "subtopic": "linear equations"
-      },
-      {
           "id": 52,
           "questionHindi": "यदि दो संख्याओं का अंतर 12 है और उनका अनुपात 1:3 है, तो बड़ी संख्या ज्ञात कीजिए।",
           "questionEnglish": "If the difference between two numbers is 12 and their ratio is 1:3, then find the larger number.",
@@ -545,15 +509,7 @@ const qustionsArr = [
           "topic": "algebra",
           "subtopic": "linear equations"
       },
-      {
-          "id": 62,
-          "questionHindi": "यदि किसी संख्या में 20 जोड़ने पर परिणाम उस संख्या के चार गुने के बराबर होता है, तो वह संख्या ज्ञात कीजिए।",
-          "questionEnglish": "If 20 is added to a number, the result is equal to four times the number. Find the number.",
-          "option": ["5", "6", "7", "8"],
-          "answer": ["6.67"],
-          "topic": "algebra",
-          "subtopic": "linear equations"
-      }, {
+  {
           "id": 63,
           "questionHindi": "यदि दो संख्याओं का अंतर 16 है और उनका अनुपात 2:5 है, तो बड़ी संख्या ज्ञात कीजिए।",
           "questionEnglish": "If the difference between two numbers is 16 and their ratio is 2:5, then find the larger number.",
@@ -577,15 +533,6 @@ const qustionsArr = [
           "questionEnglish": "If 6(x - 3) = 4(x + 1), then what is the value of x.",
           "option": ["8", "9", "10", "11"],
           "answer": ["10"],
-          "topic": "algebra",
-          "subtopic": "linear equations"
-      },
-      {
-          "id": 66,
-          "questionHindi": "यदि 1/x + 1/7 = 1/4, तो x का मान ज्ञात कीजिए।",
-          "questionEnglish": "If 1/x + 1/7 = 1/4, then what is the value of x.",
-          "option": ["18.67", "19.67", "20.67", "21.67"],
-          "answer": ["28/3"],
           "topic": "algebra",
           "subtopic": "linear equations"
       },
@@ -644,15 +591,6 @@ const qustionsArr = [
           "subtopic": "linear equations"
       },
       {
-          "id": 73,
-          "questionHindi": "यदि किसी संख्या में 15 जोड़ने पर परिणाम उस संख्या के तीन गुने के बराबर होता है, तो वह संख्या ज्ञात कीजिए।",
-          "questionEnglish": "If 15 is added to a number, the result is equal to three times the number. Find the number.",
-          "option": ["5", "6", "7", "8"],
-          "answer": ["7.5"],
-          "topic": "algebra",
-          "subtopic": "linear equations"
-      },
-      {
           "id": 74,
           "questionHindi": "यदि दो संख्याओं का अंतर 18 है और उनका अनुपात 4:7 है, तो बड़ी संख्या ज्ञात कीजिए।",
           "questionEnglish": "If the difference between two numbers is 18 and their ratio is 4:7, then find the larger number.",
@@ -676,14 +614,6 @@ const qustionsArr = [
           "questionEnglish": "If 8(x - 1) = 3(x + 2), then what is the value of x.",
           "option": ["3.8", "4.2", "4.6", "5"],
           "answer": ["3.8"],
-          "topic": "algebra",
-          "subtopic": "linear equations"
-      }, {
-          "id": 77,
-          "questionHindi": "यदि 1/x + 1/8 = 1/5, तो x का मान ज्ञात कीजिए।",
-          "questionEnglish": "If 1/x + 1/8 = 1/5, then what is the value of x.",
-          "option": ["18.67", "19.67", "20.67", "21.67"],
-          "answer": ["21.33"],
           "topic": "algebra",
           "subtopic": "linear equations"
       },
@@ -742,29 +672,11 @@ const qustionsArr = [
           "subtopic": "linear equations"
       },
       {
-          "id": 84,
-          "questionHindi": "यदि किसी संख्या में 24 जोड़ने पर परिणाम उस संख्या के तीन गुने के बराबर होता है, तो वह संख्या ज्ञात कीजिए।",
-          "questionEnglish": "If 24 is added to a number, the result is equal to three times the number. Find the number.",
-          "option": ["8", "9", "10", "11"],
-          "answer": ["12"],
-          "topic": "algebra",
-          "subtopic": "linear equations"
-      },
-      {
           "id": 85,
           "questionHindi": "यदि दो संख्याओं का अंतर 24 है और उनका अनुपात 3:7 है, तो बड़ी संख्या ज्ञात कीजिए।",
           "questionEnglish": "If the difference between two numbers is 24 and their ratio is 3:7, then find the larger number.",
           "option": ["36", "42", "48", "56"],
           "answer": ["42"],
-          "topic": "algebra",
-          "subtopic": "linear equations"
-      },
-      {
-          "id": 86,
-          "questionHindi": "यदि 13x + 5 = 2x - 12 है, तो x का मान ज्ञात कीजिए।",
-          "questionEnglish": "If 13x + 5 = 2x - 12, then what is the value of x.",
-          "option": ["-5/11", "-4/11", "-3/11", "-2/11"],
-          "answer": ["-17/11"],
           "topic": "algebra",
           "subtopic": "linear equations"
       },
@@ -854,15 +766,6 @@ const qustionsArr = [
           "questionEnglish": "If the difference between two numbers is 25 and their ratio is 2:7, then find the larger number.",
           "option": ["35", "42", "49", "56"],
           "answer": ["35"],
-          "topic": "algebra",
-          "subtopic": "linear equations"
-      },
-      {
-          "id": 97,
-          "questionHindi": "यदि 15x + 8 = 2x - 7 है, तो x का मान ज्ञात कीजिए।",
-          "questionEnglish": "If 15x + 8 = 2x - 7, then what is the value of x.",
-          "option": ["-5/13", "-4/13", "-3/13", "-2/13"],
-          "answer": ["-15/13"], 
           "topic": "algebra",
           "subtopic": "linear equations"
       },
