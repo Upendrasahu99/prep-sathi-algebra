@@ -5,13 +5,13 @@ import Result from './Result.jsx';
 import {AppContext} from '../context/AppContextProvider.jsx';
 
 const TestSection = () => {
-  const {testMode, setTestMode} = useContext(AppContext);
+  const {testMode, setTestMode, resultData} = useContext(AppContext);
 
   return (
     <div className='flex justify-center items-center'>
       {testMode === 'questionMode' && <QuestionTestMode/>}
       {testMode === 'testMode' && <FullTestMode/>}
-      {testMode === 'result' && <Result />}
+      {testMode === 'result' && <Result resultData={resultData}/>}
       {
         testMode === 'modeSelection' &&
         <div className='flex flex-col gap-5'>

@@ -18,7 +18,7 @@ const McqQuesstionCard = ({currentIndex, handleRadioChange, currentQuestion}) =>
             className="radio" 
             id='option1' 
             value={currentQuestion.option[0]} 
-            onChange={undefined}
+            onChange={handleRadioChange}
             checked={false}
           /> 
           <label htmlFor="option1">{currentQuestion.option[0]}</label>
