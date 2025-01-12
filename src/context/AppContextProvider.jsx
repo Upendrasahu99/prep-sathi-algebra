@@ -5,7 +5,7 @@ const AppContext = createContext();
 
 const AppContextProvider = ({children}) => {
   const[testMode, setTestMode] = useState('modeSelection');
-  const[resultData, setResultData] = useState([]);  
+  const[resultData, setResultData] = useState([]); 
 
   return (
     <AppContext.Provider value={{

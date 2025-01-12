@@ -10,7 +10,7 @@ const QuestionTestMode = () => {
   const {setTestMode} =useContext(AppContext);
   const enableStartButton = totalQuestion === 0 || timeLimit === 0;
 
-  const timeLimitOptions = [30,40,50,60,70,80,90,100,120];
+  const timeLimitOptions = [30,40,50,60,70,80,90];
   const totalQuestionOptions = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50];
 
   const handalSelectTotalQuestion = (data)=>{

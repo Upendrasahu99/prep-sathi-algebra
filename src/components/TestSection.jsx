@@ -8,7 +8,7 @@ const TestSection = () => {
   const {testMode, setTestMode, resultData} = useContext(AppContext);
 
   return (
-    <div className='flex justify-center items-center'>
+    <div className='flex justify-center items-center mt-24'>
       {testMode === 'questionMode' && <QuestionTestMode/>}
       {testMode === 'testMode' && <FullTestMode/>}
       {testMode === 'result' && <Result resultData={resultData}/>}

@@ -1,13 +1,10 @@
 import React from 'react'
-import qustionsArr from '../data/algebraQuestions.js'
 import prepSathiLogo from '../assets/prep_sathi_logo_white_transparent.png'
-import CountDown from './CountDown.jsx'
 
 const Navbar =  () => {
   return (
-    <div className="navbar bg-base-300 mb-5">
+    <div className="navbar bg-base-300 mb-5 fixed top-0 z-49">
       <button className="btn btn-ghost text-xl"> <img src={prepSathiLogo} alt="" className='h-1/2' />Prep Sathi</button>
-      <CountDown />
     </div>
   )
 }
