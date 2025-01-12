@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import SecondCountDown from './SecondCountDown'
+import { AppContext } from '../context/AppContextProvider'
 
 const McqQuesstionCard = ({currentIndex, handleRadioChange, currentQuestion, timeLimit, handleTimeEnd}) => {
-
+  const {testMode} = useContext(AppContext);
   return (
     <div className="card bg-base-100 w-96 shadow-xl mx-auto">
 
       {/* CountDown */}
-      <SecondCountDown key={currentIndex} timeLimit={timeLimit} handleTimeEnd={handleTimeEnd}/>
+      {/* <SecondCountDown key={currentIndex} timeLimit={timeLimit} handleTimeEnd={handleTimeEnd}/> */}
 
       <div className="card-body flex flex-col gap-5">
         <p>
@@ -20,48 +21,48 @@ const McqQuesstionCard = ({currentIndex, handleRadioChange, currentQuestion, tim
           <li className='flex items-center gap-2'>
             <input 
               type="radio" 
-              name="radio-1" 
+              name={currentIndex} 
               className="radio" 
               id='option1' 
               value={currentQuestion.option[0]} 
               onChange={handleRadioChange}
-              checked={false}
+              // checked={testMode === 'questionMode' && false}
             /> 
             <label htmlFor="option1">{currentQuestion.option[0]}</label>
           </li>
           <li className='flex items-center gap-2'>
             <input 
               type="radio" 
-              name="radio-1" 
+              name={currentIndex}
               className="radio" 
               id='option2' 
               value={currentQuestion.option[1]} 
               onChange={handleRadioChange}
-              checked={false}
+              // checked={testMode === 'questionMode' && false}
             />
             <label htmlFor="option2">{currentQuestion.option[1]}</label>
           </li>
           <li className='flex items-center gap-2'>
             <input 
               type="radio" 
-              name="radio-1" 
+              name={currentIndex}
               className="radio" 
               id='option3' 
               value={currentQuestion.option[2]} 
               onChange={handleRadioChange}
-              checked={false}
+              // checked={testMode === 'questionMode' && false}
             /> 
             <label htmlFor="option3">{currentQuestion.option[2]}</label>
           </li>
           <li className='flex items-center gap-2'>
             <input 
               type="radio" 
-              name="radio-1" 
+              name={currentIndex}
               className="radio" 
               id='option4' 
               value={currentQuestion.option[3]} 
               onChange={handleRadioChange}
-              checked={false}
+              // checked={testMode === 'questionMode' && false}
             /> 
             <label htmlFor="option4">{currentQuestion.option[3]}</label>
           </li>

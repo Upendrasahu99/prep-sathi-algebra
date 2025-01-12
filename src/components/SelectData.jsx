@@ -7,7 +7,7 @@ const SelectData = ({label ,options, optionSuffix, handleChange}) => {
         <span className="label-text">{label}</span>
       </div>
       <select className="select select-bordered w-full max-w-xs" defaultValue={'selectOption'} onChange={(e) => { handleChange(e.target.value)}}>
-        <option disabled value={'selectOption'}>Select Option</option>
+        <option disabled value={'selectOption'}>Select</option>
         {options.map((data, index) =><option key={index} value={data}>{data} {optionSuffix}</option>)}
       </select>
     </div>
