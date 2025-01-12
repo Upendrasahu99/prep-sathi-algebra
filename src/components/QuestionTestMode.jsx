@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
-import SelectData from './SelectData'
-import SingleQuestionSection from './SingleQuestionSection'
+import React, { useState, useContext } from 'react';
+import SelectData from './SelectData';
+import SingleQuestionSection from './SingleQuestionSection';
+import { AppContext } from '../context/AppContextProvider';
 
 const QuestionTestMode = () => {
   const [startTest, setStartTest] = useState(false)
   const [totalQuestion, setTotalQuestion] = useState(0);
   const [timeLimit, setTimeLimit] = useState(0);
+  const {setTestMode} =useContext(AppContext);
   const enableStartButton = totalQuestion === 0 && timeLimit === 0;
 
   const timeLimitOptions = [30,40,50,60,70,80,90,100,120];
@@ -39,6 +41,7 @@ const QuestionTestMode = () => {
             handleChange = {handalSelectTotalQuestion}
           />
           <button className="btn sm:btn-sm md:btn-md" onClick={() => {setStartTest(true)}} disabled={enableStartButton}>Start Test</button>
+          <button className="btn sm:btn-sm md:btn-md" onClick={() => {setTestMode('modeSelection')}}>Go back</button>
         </div>
       }
     </div>

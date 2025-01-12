@@ -1,16 +1,19 @@
-import {useState} from 'react'
+import {useContext, useState} from 'react'
 import FullTestMode from './FullTestMode.jsx';
 import QuestionTestMode from './QuestionTestMode.jsx';
+import Result from './Result.jsx';
+import {AppContext} from '../context/AppContextProvider.jsx';
 
 const TestSection = () => {
-  const[testMode, setTestMode] = useState('');
+  const {testMode, setTestMode} = useContext(AppContext);
 
   return (
     <div className='flex justify-center items-center'>
-      {testMode === 'questionMode' && <QuestionTestMode />}
-      {testMode === 'testMode' && <FullTestMode />}
+      {testMode === 'questionMode' && <QuestionTestMode/>}
+      {testMode === 'testMode' && <FullTestMode/>}
+      {testMode === 'result' && <Result />}
       {
-        testMode === '' &&
+        testMode === 'modeSelection' &&
         <div className='flex flex-col gap-5'>
           <button className="btn sm:btn-sm md:btn-md lg:btn-lg" onClick={() => {setTestMode('questionMode')}}>Question-by-Question</button>
           <button className="btn sm:btn-sm md:btn-md lg:btn-lg" onClick={() => {setTestMode('testMode')}} disabled>Full Test</button>
